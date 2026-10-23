@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Multimedia | Formularios</title>
   </head>
-  <style> /*dentro del archivo html para poder quitarle al usuario la funcionalidad de agrandar o achicar el textarea (cuadro de comentarios)*/
+  <style> /*dentro del archivo html para poder quitarle al usuario la funcionalidad de agrandar o achicar el textarea (cuadro de comentarios) y a la etiqueta fieldset le saca el borde por ejemplo*/
     textarea {
       resize: none;
+    }
+    fieldset {
+      border: none;
     }
   </style>
   <body>
@@ -78,6 +81,17 @@
             <textarea placeholder="Ingrese su mensaje" cols="50" rows="10"></textarea> <!--sirve para opiniones y para mensajes más largos que del tipo input text, tiene un campo más grande para escribir. Cols es el atributo columna y rows es el atributo filas-->
           </div>
           <input type="file" accept="multiple"> <!--para cargar archivos, el atributo accept sirve para elegir qué tipo de archivo quiero que se suba, con la coma separo y puedo indicarle que cargue diferentes tipos de archivos. Fundamental agregar el . antes de el tipo de archivo. Multiple hace que acepte todo tipo de archivo, si no le indico atributo, queda por defecto-->
+          <fieldset> <!--conjunto de campos, se le puede agregar los input dentro, no se suele usar, es para datos de usuario, por ejemplo, muy extensos--> 
+            <legend>Gustos</legend>
+             <div>
+            <input type="radio" name="comida" id="asado">
+            <label for="asado">Asado</label>
+            <input type="radio" name="comida" id="ravioles">
+            <label for="ravioles">Ravioles</label>
+            <input type="radio" name="comida" id="lasagna">
+            <label for="lasagna">Lasagna</label>
+          </div>
+          </fieldset>
         <button>Enviar</button>
         </form>
       </section>
