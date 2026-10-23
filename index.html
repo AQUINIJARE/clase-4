@@ -1,15 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Multimedia | Formularios</title>
   </head>
+  <style> /*dentro del archivo html para poder quitarle al usuario la funcionalidad de agrandar o achicar el textarea (cuadro de comentarios)*/
+    textarea {
+      resize: none;
+    }
+  </style>
   <body>
     <header>
+      <h1>Clase 4 - Formularios</h1>
       <nav>
         <ul>
-          <li><a href=""></a></li>
+          <li><a href="..."></a>Formulario</li>
         </ul>
       </nav>
     </header>
@@ -33,6 +39,47 @@
       </section>
       <section>
         <h2>Alimentos balanceados</h2>
+      </section>
+      <section>
+        <form>
+          <input type="text" placeholder="Ingrese su nombre" required>
+          <input type="email" placeholder="Ingrese su email" autocomplete="off" required>
+          <input type="password" placeholder="Ingrese su contraseña" required>
+          <input type="number" placeholder="Ingrese su edad" required>
+          <input type="color">
+          <input type="date">
+          <input type="range" min="0" max="100" step="50">
+          <select>
+            <option value="1">Opción 1</option>
+            <option value="2">Opción 2</option>
+            <option value="3">Opción 3</option>
+            <option value="4">Opción 4</option>
+            <option value="5">Opción 5</option>
+          </select>
+          <div>
+            <input type="radio" name="animal" id="perro"> <!--id y for deben indicar el mismo valor para que todo funcione-->
+            <label for="perro">Perro</label>
+            <input type="radio" name="animal" id="gato">
+            <label for="gato">Gato</label>
+            <input type="radio" name="animal" id="tortuga">
+            <label for="tortuga">Tortuga</label>
+          </div>
+          <div>
+            <h3>Intereses</h3>
+            <input type="checkbox" id="programacion">
+            <label for="programacion">Programación</label>
+            <input type="checkbox" id="dibujo">
+            <label for="dibujo">Dibujo</label>
+            <input type="checkbox" id="pesca">
+            <label for="pesca">Pesca</label>
+          </div>
+          <div>
+            <h3>Mensaje</h3>
+            <textarea placeholder="Ingrese su mensaje" cols="50" rows="10"></textarea> <!--sirve para opiniones y para mensajes más largos que del tipo input text, tiene un campo más grande para escribir. Cols es el atributo columna y rows es el atributo filas-->
+          </div>
+          <input type="file" accept="multiple"> <!--para cargar archivos, el atributo accept sirve para elegir qué tipo de archivo quiero que se suba, con la coma separo y puedo indicarle que cargue diferentes tipos de archivos. Fundamental agregar el . antes de el tipo de archivo. Multiple hace que acepte todo tipo de archivo, si no le indico atributo, queda por defecto-->
+        <button>Enviar</button>
+        </form>
       </section>
     </main>
     <footer></footer>
