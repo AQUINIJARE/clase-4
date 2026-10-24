@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>La Morada</title>
+    <style>
+      body {
+        background-color: rgb(189, 171, 206);
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -14,7 +19,6 @@
       </h2>
       <nav></nav>
     </header>
-
     <main>
       <section>
         <h3>Sobre nosotros</h3>
@@ -27,14 +31,16 @@
           compañía del otro.
         </p>
       </section>
-      <img
-        src="cumple-la-morada.jpeg"
-        alt="cumpleaños número 60 realizado en La Morada"
-        width="520"
-        height="350"
-        title="Decoración de cumpleaños N° 60"
-      />
-      <section> 
+      <figure>
+        <img
+          src="cumple-la-morada.jpeg"
+          alt="cumpleaños número 60 realizado en La Morada"
+          width="520"
+          height="350"
+          title="Decoración de cumpleaños N° 60"
+        />
+      </figure>
+      <section>
         <article>
           <p>
             Nuestro objetivo es la innovación, traer diferentes propuestas, que
@@ -43,51 +49,76 @@
         </article>
       </section>
       <section>
-      </section>
-      <section>
-          <p>Te presentamos a continuación las propuestas que vas a encontrar en nuestro centro:</p>
+        <p>
+          Te presentamos a continuación las propuestas que vas a encontrar en
+          nuestro centro:
+        </p>
+        <!--Actividad 1-->
+        <ul>
+          <li>
+            <strong>Entrenamiento funcional + pilates con elementos</strong>
+          </li>
+        </ul>
+        <form>
+          <select>
+            <option value="dia1">LUNES</option>
+            <option value="dia2">MIÉRCOLES</option>
+          </select>
+          <select>
+            <option value="horario1">10:00 HS.</option>
+            <option value="horario2">11:00 HS.</option>
+          </select>
+          <!--Actividad 2-->
           <ul>
-            <li>Entrenamiento funcional + pilates con elementos</li>
-            <form>
-              <select>
-                <option value="dia1">LUNES</option>
-                <option value="dia2">MIÉRCOLES</option>
-              </select>
-              <select>
-                <option value="horario1">10:00 HS.</option>
-                <option value="horario2">11:00 HS.</option>
-              </select>
-            </form>
+            <li><strong>Danza jazz fusión Infantil / MIÉRCOLES</strong></li>
           </ul>
-          <ul>
-            <li>Danza jazz fusión Infantil / MIÉRCOLES</li>
-            <form>
-            <input type="radio" name="danzaJazz" id="horario1"> 
-            <label for="horario1">18:00 HS.</label>
-            <input type="radio" name="danzaJazz" id="horario2">
-            <label for="horario2">19:00 HS</label>
-            <input type="radio" name="danzaJazz" id="horario3">
-            <label for="horario3">20:00 HS</label>
-            <input type="number" placeholder="Edad" min="3" max="17" required>
-            </form>
-          </ul>
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/rYXVAAL_1ss?si=p4aOnAnrWyX2ruQF" title="YouTube video player"; autoplay; referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <div>
-            <form>
+          <input type="radio" name="danzaJazz" id="horarioUno" />
+          <label for="horarioUno">18:00 HS.</label>
+          <input type="radio" name="danzaJazz" id="horarioDos" />
+          <label for="horarioDos">19:00 HS</label>
+          <input type="radio" name="danzaJazz" id="horarioTres" />
+          <label for="horarioTres">20:00 HS</label>
+          <input type="number" placeholder="Edad" min="3" max="17" required />
+        </form>
+        <!--Música chill de navegación-->
+        <br />
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/rYXVAAL_1ss?si=p4aOnAnrWyX2ruQF"
+          title="YouTube video player"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <div>
+          <!--Sección de comentarios y envío de formulario-->
+          <form>
             <h3>Dejanos tu comentario</h3>
-            <textarea placeholder="Ingrese su mensaje" cols="50" rows="10"></textarea>
-            </form>
-          </div>
-          <div>
-            <form>
-            <input type="text" placeholder="Ingrese su nombre" required>
-            <input type="email" placeholder="Ingrese su email" required>
+            <textarea
+              placeholder="Ingrese su mensaje"
+              cols="50"
+              rows="10"
+            ></textarea>
+          </form>
+        </div>
+        <div>
+          <form>
+            <input type="text" placeholder="Ingrese su nombre" required />
+            <input type="email" placeholder="Ingrese su email" required />
             <button>Enviar</button>
-            </form>
-          </div>
+          </form>
+        </div>
       </section>
     </main>
-
-    <footer></footer>
+    <footer>&copy; todos los derechos reservados.</footer>
   </body>
 </html>
